@@ -1,6 +1,9 @@
 'use strict';
 
 const EmberApp = require('ember-cli/lib/broccoli/ember-app');
+const { setEdition } = require("@ember/edition-utils");
+
+setEdition("octane");
 
 module.exports = function(defaults) {
   let app = new EmberApp(defaults, {
