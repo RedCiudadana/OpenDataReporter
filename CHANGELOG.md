@@ -14,6 +14,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Changed
 - Enabled template-only-glimmer-components feature.
 - Disabled application-template-wrapper feature.
+- Replace ember-qunit and qunit-dom for ember-mocha, ember-cli-chai and chai-dom.
 
 ### Removed
 - Removed ember-data package.
