@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "target": "es2018",
+    "experimentalDecorators": true,
+    "baseUrl": ".",
+    "paths": {
+      "open-data-reporter/tests/*": ["./tests/*"],
+      "open-data-reporter/*": ["./app/*"]
+    }
+  },
+  "exclude": [
+    "node_modules",
+    "bower_components",
+    "tmp",
+    "vendor",
+    ".git",
+    "dist"
+  ]
+}

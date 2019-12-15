@@ -1,3 +1,20 @@
-<div>
-  {{outlet}}
-</div>
+<ul class="flex px-8 py-4 bg-indigo-400">
+  {{!-- <li class="ml-auto">
+    <a class="text-white hover:text-indigo-700 font-bold" href="#">Active</a>
+  </li> --}}
+  {{#if session.isAuthenticated}}
+    {{#if currentUser.user}}
+      <p class="mx-3 ml-auto font-bold text-white my-auto">{{currentUser.user.name}}</p>
+      <img class="h-10 w-10 rounded-full mx-2" src={{currentUser.user.picture}} alt="Image profile for {{currentUser.user.name}}">
+    {{/if}}
+    <button class="bg-indigo-600 font-bold text-white px-3 py-1 rounded" onclick={{action this.logout}}>Logout</button>
+  {{else}}
+    <button class="bg-indigo-600 font-bold text-white px-3 py-1 ml-auto rounded" {{action this.login}}>
+      Login
+    </button>
+  {{/if}}
+</ul>
+{{outlet}}
+<button class="bg-indigo-600 font-bold text-white px-3 py-1 ml-auto rounded" {{action this.showSessionInfo}}>
+  Show session info
+</button>

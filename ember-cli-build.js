@@ -6,8 +6,11 @@ const { setEdition } = require("@ember/edition-utils");
 setEdition("octane");
 
 module.exports = function(defaults) {
+  let envIsDevelopment = process.env.EMBER_ENV === "development";
+
   let app = new EmberApp(defaults, {
-    // Add options here
+    hinting: !envIsDevelopment,
+    tests: !envIsDevelopment
   });
 
   // Use `app.import` to add additional libraries to the generated

@@ -20,6 +20,19 @@ module.exports = function(environment) {
     APP: {
       // Here you can pass flags/options to your application instance
       // when it is created
+    },
+
+    torii: {
+      allowUnsafeRedirect: true,
+      // a 'session' property will be injected on routes and controllers
+      // sessionServiceName: 'session',
+      providers: {
+        'google-oauth2-bearer-v2': {
+          scope: 'openid profile email https://www.googleapis.com/auth/cloud-platform https://www.googleapis.com/auth/cloud-vision',
+          apiKey: '1000752502600-ddjlmq2sldpm7bie85me0pkt50j4n5gm.apps.googleusercontent.com',
+          redirectUri: 'http://localhost:4200/oauth2callback'
+        }
+      }
     }
   };
 

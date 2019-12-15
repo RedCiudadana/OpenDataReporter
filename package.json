@@ -42,10 +42,12 @@
     "ember-maybe-import-regenerator": "^0.1.6",
     "ember-mocha": "^0.16.2",
     "ember-resolver": "^5.3.0",
+    "ember-simple-auth": "^2.1.0",
     "ember-source": "~3.14.1",
     "eslint-plugin-ember": "^7.1.0",
     "eslint-plugin-node": "^10.0.0",
-    "loader.js": "^4.7.0"
+    "loader.js": "^4.7.0",
+    "torii": "^0.10.1"
   },
   "engines": {
     "node": "8.* || >= 10.*"
