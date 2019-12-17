@@ -10,6 +10,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Added @glimmer/component@^1.0.0-beta.1 package.
 - Added `setEdition("octane");` in `.ember-cli.js`.
 - Added this CHANGELOG.
+- Added favicon.
 
 ### Changed
 - Enabled template-only-glimmer-components feature.
