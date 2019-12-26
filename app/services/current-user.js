@@ -23,8 +23,7 @@ class CurrentUserService extends Service {
       .then((response) => response.json())
       .then((user) => this.user = user)
       .catch((err) => {
-        console.log('catch2');
-        console.log(err);
+        debug(err);
       });
     } else {
       debug('current-user:service - resolve no authenthicated');

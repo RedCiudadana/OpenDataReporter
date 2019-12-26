@@ -7,4 +7,6 @@ export default class Router extends EmberRouter {
 }
 
 Router.map(function() {
+  // Wildcard path for 404
+  this.route('page-not-found', { path: '**' });
 });
