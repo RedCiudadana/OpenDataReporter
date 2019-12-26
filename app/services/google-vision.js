@@ -8,7 +8,7 @@ import fetch from 'fetch';
  * Service to make request to Google Vision API.
  *
  * @class GoogleVisionService
- * @namespace Services
+ * @module Services
  * @extends Ember.Service
  * @public
 */
@@ -23,7 +23,7 @@ export default class GoogleVisionService extends Service {
   /**
    * Extract text from uploaded file encoded base64 and return a array with array per document with all text per pages.
    * Google Vision Endpoint: `https://vision.googleapis.com/v1/files:annotate`
-   *
+   * @method analyzeAttachFile
    * @param {string} file The file to upload encoded in URL format
    */
   analyzeAttachFile(file) {

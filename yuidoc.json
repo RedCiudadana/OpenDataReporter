@@ -1,0 +1,22 @@
+{
+  "name": "OpenDataReporter",
+  "description": "A experimental application to extract text from public documents.",
+  "url": "https://github.com/RedCiudadana/OpenDataReporter",
+  "primaryColor": "blue",
+  "logo": "../img/open-data-reporter-logo.svg",
+  "options": {
+    "enabledEnvironments": [],
+    "paths": [
+      "app"
+    ],
+    "themedir": "node_modules/yuidoc-ember-theme",
+    "helpers": ["node_modules/yuidoc-ember-theme/helpers/helpers.js"],
+    "exclude": "vendor",
+    "outdir": "docs/api",
+    "linkNatives": true,
+    "quiet": true,
+    "parseOnly": false,
+    "lint": false,
+    "nocode": false
+  }
+}
